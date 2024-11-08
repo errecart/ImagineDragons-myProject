@@ -1,0 +1,57 @@
+.albums {
+  display: flex;
+  justify-content: space-evenly;
+  .albums-card {
+    transform: skew(-4deg);
+    width: 230px;
+    height: 450px;
+    margin-left: 15px;
+  }
+}
+
+.albums-card:hover .card-front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.albums-card:hover .card-back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.albums-card .face {
+  position: absolute;
+  width: 230px;
+  height: 450px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 7px;
+}
+.albums-card img {
+  border-radius: 7px;
+  position: absolute;
+  image-rendering: auto;
+  width: 230px;
+  height: 450px;
+}
+.albums-card .card-front {
+  transform: perspective(600px) rotateY(0deg);
+}
+.albums-card .card-back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #c1acac;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.albums-card .card-back h3 {
+  font-family: "Righteous", cursive;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.albums-card .card-back ul li {
+  font-size: 17px;
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+  list-style: none;
+  line-height: 20px;
+  text-decoration-line: underline;
+}

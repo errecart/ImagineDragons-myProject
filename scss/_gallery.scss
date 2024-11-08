@@ -1,0 +1,64 @@
+.img-container {
+  margin: 5rem 2rem 5rem 0;
+}
+
+.img-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0 5rem 8rem;
+}
+.img-section h3 {
+  font-family: "Righteous", cursive;
+  font-size: 50px;
+  font-weight: 700;
+  color: #cccccc;
+  margin-right: 2rem;
+  text-shadow: -3px 4px 0px #00c300;
+}
+
+.img-section-container {
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 15px 15px;
+}
+.img-section-container img {
+  width: 23rem;
+  height: 14rem;
+  opacity: 0.8;
+  transition: 0.5s;
+  border: solid 2px #ffe5ff;
+  filter: grayscale(1);
+  image-rendering: auto;
+}
+.img-section-container img:hover {
+  cursor: crosshair;
+  opacity: 1;
+  filter: contrast(120%);
+  transform: scale(1.4);
+  z-index: 10;
+}
+
+.img1:hover {
+  box-shadow: -1px 1px 14px 7px rgba(250, 0, 0, 0.75);
+}
+
+.img2:hover {
+  box-shadow: -1px 1px 14px 7px rgba(0, 10, 250, 0.75);
+}
+
+.img3:hover {
+  box-shadow: -1px 1px 14px 7px rgba(20, 250, 0, 0.75);
+}
+
+.img4:hover {
+  box-shadow: -1px 1px 14px 7px rgba(245, 250, 0, 0.75);
+}
+
+.img5:hover {
+  box-shadow: -1px 1px 14px 7px rgba(170, 0, 250, 0.75);
+}
+
+.img6:hover {
+  box-shadow: -1px 1px 14px 7px rgba(250, 135, 0, 0.75);
+}

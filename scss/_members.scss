@@ -1,0 +1,63 @@
+.members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.members .card {
+  height: 470px;
+  width: 300px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 2%;
+  transition: all 0.4s;
+  text-align: center;
+  background-color: #2d2d2d;
+  &:hover {
+    border-radius: 5px;
+    box-shadow: 0px 1px 32px 10px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 1px 32px 10px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 0px 1px 32px 10px rgba(0, 0, 0, 0.5) inset;
+  }
+  img {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    display: block;
+    height: 250px;
+    width: 300px;
+    transition: all 0.3s ease;
+  }
+  h3 {
+    font-family: "Righteous", cursive;
+    color: #cccccc;
+    font-size: 20px;
+    rotate: -10deg;
+  }
+  span {
+    color: #ffe5ff;
+  }
+  ul li {
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    margin-top: 1rem;
+    rotate: -10deg;
+    font-weight: 600;
+    color: #7b7b7b;
+  }
+}
+
+.card-main h3,
+.members-info{
+  padding: 0 10px;
+}
+
+.members .card:nth-child(1),
+.members .card:nth-child(3) {
+  border: 2px solid #b300b2;
+  cursor: crosshair;
+}
+.members .card:nth-child(2),
+.members .card:nth-child(4) {
+  border: 2px solid #00c300;
+  cursor: crosshair;
+}
+
